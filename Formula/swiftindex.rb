@@ -12,7 +12,7 @@ class Swiftindex < Formula
   end
 
   def install
-    bin.install "swiftindex"
+    bin.install "swiftindex", "default.metallib", "mlx.metallib"
   end
 
   def caveats
