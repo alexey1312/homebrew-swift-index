@@ -12,7 +12,11 @@ class Swiftindex < Formula
   end
 
   def install
-    bin.install "swiftindex", "default.metallib", "mlx.metallib"
+    # Install binary and metallibs together in libexec
+    # (metallibs must be in same directory as binary for MLX to find them)
+    libexec.install "swiftindex", "default.metallib", "mlx.metallib"
+    # Symlink only the binary to bin
+    bin.install_symlink libexec/"swiftindex"
   end
 
   def caveats
