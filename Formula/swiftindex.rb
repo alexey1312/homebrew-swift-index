@@ -6,7 +6,7 @@ class Swiftindex < Formula
 
   on_macos do
     url "https://github.com/alexey1312/swift-index/releases/download/v#{version}/swiftindex-macos.zip"
-    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+    sha256 "600184abdb090ddf8829b4afb69f64b4fe285a957440c02595bbfd8504857af0"
 
     depends_on macos: :sonoma
   end
