@@ -1,12 +1,12 @@
 class Swiftindex < Formula
   desc "Swift-native semantic code search for AI coding assistants via MCP"
   homepage "https://github.com/alexey1312/swift-index"
-  version "0.2.13"
+  version "0.2.14"
   license "MIT"
 
   on_macos do
     url "https://github.com/alexey1312/swift-index/releases/download/v#{version}/swiftindex-macos.zip"
-    sha256 "ea456218ad8a642e7b71a351cb1955ff46d6d8052ec2975605511bd067a4d5ed"
+    sha256 "a30c50cde1e6e2ffe978349f4ae66e56575b8618575b5f45b2e14910102151aa"
 
     depends_on macos: :sonoma
   end
